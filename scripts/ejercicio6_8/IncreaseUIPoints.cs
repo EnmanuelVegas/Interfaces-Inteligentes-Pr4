@@ -1,7 +1,9 @@
 using UnityEngine;
 
-public class IncreasePoints : MonoBehaviour
+public class IncreaseUIPoints : MonoBehaviour
 {
+  public delegate void message(int points);
+  public event message OnCollisionWithShields;
   public int points = 0;
 
   void OnTriggerEnter(Collider other) 
@@ -22,8 +24,13 @@ public class IncreasePoints : MonoBehaviour
         default:
           break;
       }
-      Debug.Log($"Puntos incrementados: {points} (tipo: {tipo})");
       Destroy(other.gameObject);
     }
+    if (other.gameObject.tag == "monstruo")
+    {
+      points -= 10;
+      Debug.Log($"Puntos deducidos: {points}");      
+    }
+    OnCollisionWithShields(points);
   }
 }
