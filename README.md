@@ -17,7 +17,7 @@ Para este primer ejercicio se ha procedido a crear un [script](/scripts/NotifyCo
 
 _Sustituye los objetos geométricos por humanoides._
 
-Simplemente descargamos los elementos de la `Asset Store` y realizamos el cambio de elementos (agregando los correspondientes Colliders a cada objeto).
+Simplemente descargamos los elementos de la `Asset Store` y realizamos el cambio de elementos.
 
 ![ejercicio2](./images/ej2.gif)
 
@@ -53,7 +53,7 @@ En este caso, se detectan las colisiones resultantes y se controla la lógica co
 
 _Partiendo del script anterior crea una interfaz que muestre la puntuación que va obteniendo el cubo._
 
-Partimos del ejercicio anterior como base. [Modificamos el script](scripts/ejercicio6_8/ShowPoints.cs) con el que estábamos trabajando para que notifique cuando se colisione con un escudo. La UI recibirá la nueva cantidad de puntos con [este script](scripts/ejercicio6_8/ShowPoints.cs) y actualizará el texto.
+Partimos del ejercicio anterior como base. [Modificamos el script](scripts/ejercicio6_8/IncreaseUIPoints.cs) con el que estábamos trabajando para que notifique cuando se colisione con un escudo. La UI recibirá la nueva cantidad de puntos con [este script](scripts/ejercicio6_8/ShowPoints.cs) y actualizará el texto.
 
 ![ejercicio6](./images/ej6.gif)
 
