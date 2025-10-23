@@ -69,7 +69,7 @@ Para este caso, solamente activamos un sprite cada vez que el jugador llegue a l
 
 _Genera una escena que incluya elementos que se ajusten a la escena del prototipo y alguna de las mecánicas anteriores._
 
-La mecánica agregada es la perder puntos cada vez que se colisione con un "enemigo", ya que eso es una mecánica que hemos de aplicar en nuestro prototipo final. El contador de puntos puede tomar valores negativos.
+La [mecánica agregada](scripts/ejercicio6_8/IncreaseUIPoints.cs) es la de perder puntos cada vez que se colisione con un "enemigo", ya que eso es una mecánica que hemos de aplicar en nuestro prototipo final. El contador de puntos puede tomar valores negativos.
 
 ![ejercicio8](./images/ej8.gif)
 
